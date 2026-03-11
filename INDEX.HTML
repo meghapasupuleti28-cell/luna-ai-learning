@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luna | AI Learning Platform</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">🌙 Luna</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="courses.html">Courses</a>
+<a href="#features">Features</a>
+<a href="#steps">How it Works</a>
+</nav>
+
+<div class="nav-buttons">
+<a href="login.html" class="login">Login</a>
+<a href="courses.html" class="primary">Explore Courses</a>
+</div>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Upgrade Your Skills With Luna</h1>
+
+<p>
+Learn job-ready skills with AI support, expert instructors and interactive learning.
+</p>
+
+<a href="courses.html" class="primary">Explore Courses</a>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="features" id="features">
+
+<h2>Why Choose Luna</h2>
+
+<div class="feature-container">
+
+<div class="feature">
+<h3>AI Study Assistant</h3>
+<p>Ask questions anytime with Watson AI tutor.</p>
+</div>
+
+<div class="feature">
+<h3>Expert Instructors</h3>
+<p>Learn from industry professionals.</p>
+</div>
+
+<div class="feature">
+<h3>Career Ready Courses</h3>
+<p>Courses designed for real jobs.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AI ASSISTANT -->
+
+<section class="ai-assistant">
+
+<h2>🤖 Luna AI Study Assistant</h2>
+
+<p>
+Ask anything about courses, learning paths, or career advice.
+Our AI tutor powered by IBM Watson is here to help you learn faster.
+</p>
+
+<div class="assistant-box">
+
+<div class="chat-area" id="chatArea">
+<p><b>Luna AI:</b> Hello 👋 I'm your Luna AI tutor. Ask me anything about courses!</p>
+</div>
+
+<div class="chat-input">
+
+<input type="text" id="userInput" placeholder="Ask your question...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section class="courses">
+
+<h2>Popular Courses</h2>
+
+<div class="course-container">
+
+<div class="course-card">
+<h3>Web Development</h3>
+<p>HTML CSS JavaScript React</p>
+</div>
+
+<div class="course-card">
+<h3>Artificial Intelligence</h3>
+<p>Python Machine Learning</p>
+</div>
+
+<div class="course-card">
+<h3>Digital Marketing</h3>
+<p>SEO Ads Social Media</p>
+</div>
+
+<div class="course-card">
+<h3>UI UX Design</h3>
+<p>Design Modern Apps</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STEPS -->
+
+<section class="steps" id="steps">
+
+<h2>Start Learning in 3 Steps</h2>
+
+<div class="step-container">
+
+<div class="step">
+<h3>1</h3>
+<p>Create account</p>
+</div>
+
+<div class="step">
+<h3>2</h3>
+<p>Choose course</p>
+</div>
+
+<div class="step">
+<h3>3</h3>
+<p>Start learning</p>
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 Luna Learning Platform</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<!-- IBM Watson AI Chatbot -->
+
+<script>
+
+window.watsonAssistantChatOptions = {
+integrationID: "0m_JOESuYgMnSeuwSC81JQQzEoZ2GDUdt4FqjZ3o785D",
+region: "au-syd",
+serviceInstanceID: "d0ac0951-4ab2-454b-8779-ca0403251b60",
+onLoad: async (instance) => { await instance.render(); }
+};
+
+setTimeout(function(){
+const t=document.createElement('script');
+t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WatsonAssistantChatEntry.js";
+document.head.appendChild(t);
+});
+
+</script>
+
+</body>
+</html>
